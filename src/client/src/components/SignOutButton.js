@@ -9,7 +9,7 @@ const SignOutButton = () => {
   const handleSignOut = async () => {
     try {
       await signOut(auth);
-      navigate('/login'); // Redirect to login page after sign-out
+      navigate('../SignOutPage'); // Redirect to login after sign-out for double confirm
     } catch (error) {
       console.error('Sign out error:', error.message);
     }
