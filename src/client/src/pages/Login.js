@@ -20,7 +20,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const result = await signInWithEmailAndPassword(auth, email, password);
-      navigate('/');
+      navigate('/LoginEnsure');
     } catch (err) {
       if (err.code === 'auth/multi-factor-auth-required') {
         const resolver = multiFactor(auth).getResolver(err);
