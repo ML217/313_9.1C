@@ -17,6 +17,7 @@ import PricingPlans from './pages/PricingPlans';
 import Success from './pages/Success';
 import Cancel from './pages/Cancel';
 import SignOutPage from './pages/SignOutPage';
+import LoginEnsure from './pages/LoginEnsure'
 
 // Component wrapper to conditionally show Header
 const Layout = ({ children }) => {
@@ -66,6 +67,7 @@ function App() {
           <Route path="/cancel" element={<Cancel />} />
           <Route path="/Premium" element={<PricingPlans />} />
           <Route path="/signoutpage" element={<SignOutPage />} />
+          <Route path="/LoginEnsure" element={<LoginEnsure />} />
         </Routes>
       </Layout>
     </Router>
